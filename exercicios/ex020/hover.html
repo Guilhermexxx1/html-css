@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* 
+        da pra fazer tambem exemplo:  dive:hover p, h1, h2 etc e depois as {  } e color: exemplo blue e pronto */
+        
+        /* posso mudar o p para p1,p2,p3 o div pra div1,div2,div3 e outros tambm, para usar no hover exemplo: div:hover > p2*/
+
+        div > p2 {
+            display: none;
+        }
+
+        div:hover  > p2 {
+            display: block;
+            color: white;
+            background-color: rgb(13, 0, 255);
+            width: 300px;
+        }
+        div:hover div {
+            color: rgb(93, 240, 25);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exemplo de hover</h1>
+        <p1>Passe o mouse sobre o texto abaixo</p1>
+        <div>
+            Passe o mouse aqui Matheus
+            <p2>DESCULPA AS VEZES EU SER CHATO.<BR>
+                TE AMO  FILHO E SEMPRE EU VOU TE AMAR, MESMO SE UM DIA EU NA ESTIVER AQUI, OLHE PARA AS ESTRELAS SE QUISER FALAR COMIGO EU ESTAREI LA , IREI SEMPRE TE OUVIR  </p2>
+        </div>
+        <p>fim do exemplo</p>
+</body>
+</html>

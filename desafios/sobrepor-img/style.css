@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.galary{
+    width: 227px;
+    height: 200px;
+    border: 1px solid rgb(255, 15, 15);
+    margin: auto;
+}
+#galary1 {
+    background: url('../img/lagarto-p.avif') center center no-repeat;
+}
+
+.descripiton {
+    width: 240px;
+    margin: 30px;
+    margin-top: 327px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+}
+
+.zindex {
+    position:relative;
+    z-index: 10;
+    margin-top: -220px !important;
+}

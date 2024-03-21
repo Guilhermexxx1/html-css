@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */ 
+            background-color: lightgray;
+            height: 300px;
+            width: 335px;
+            /*
+             esse  é o modo antigo de colocação do codigo.
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+
+            
+            border: 10px solid darkslategray; /* ->modo simplificado*/
+
+             /*
+            padding-top: 10px;
+            padding-right: 10px;  ->modo antigo
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px;   /* ->modo simplificado */
+            
+           /* se eu colocar somente  10px
+            top, right, bottom e left, ficarão tudo 10px.
+
+            padding: 10px 20px;  se eu colocar 10px 20px,  tope e bottom ficarão 10px, right e left, ficarão 20px  */
+
+           /*
+           margin-top: 20px;
+            margin-right: 10px; ->modo antigo
+            margin-bottom: 10px;
+            margin-left: 50px;
+            */
+
+            margin: 20px auto 40px auto;  /* ->modo simplificado
+            
+            modo auto calcula automaticamente para centralizar a box(caixa)*/
+
+            outline: 5px dashed salmon;
+        
+        }
+
+        a { /* inline-level */
+            display: inline;
+            border: 1px solid red;
+            padding: 1px 2px 1px 1px;
+            
+           
+        }
+     
+    </style>
+   
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Paragrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a> vamos ver como tudo isso funciona.</p>
+    <a href="file:///C:/Users/Ricardo%20fernandes/Documents/Estudos/html-css/desafios/desafio%2010/imagens/android.html"><button>Guilherme</button></a>
+    
+</body>
+</html>
