@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -21,13 +22,18 @@
             background-color: lightgray;
         }
 
-        td.scc {
-            background-color: rgba(255, 0, 191, 0.712);
+        thead, tfoot {
+            background-color: lightgray;
         }
 
-        td.sc {
-            background-color: blueviolet;
-            text-align: right;
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td, th {
@@ -40,7 +46,6 @@
         }
 
         tfoot {
-
             background-color: lightgray;
         }
     </style>
@@ -66,14 +71,12 @@
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 89px;">população</th>
-                <th>Natalidade</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São paulo</td>
                 <td class="num">45 919 049</td>
-                <td>5000 por min</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
@@ -108,8 +111,8 @@
                 <td class="num">8 125 025</td>
             </tr>
             <tr>
-                <td class="scc">Santa Catarina</td>
-                <td class="sc"><strong>7 610 361</strong></td>
+                <td>Santa Catarina</td>
+                <td><strong>7 610 361</strong></td>
             </tr>
             <tr>
                 <td>Goiás</td>
