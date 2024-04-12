@@ -8,14 +8,21 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="POST" autocomplete="on">
         <p>
             <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor">
+            <input type="color" name="cor" id="icor" value="#00ff00">
         </p>
         <p>
             <label for="inivel">Nivel de Satisfação:</label>
-            <input type="range" name="nivel" id="inivel">
+            <input type="range" name="nivel" id="inivel" min="5" max="10">
+        </p>
+
+        <p>
+            <!--quando for usar o controle de envio de arquivos, não use o metodo get(se o elemeto passarde 3mil bits)
+                 use o POST-->
+            <label for="ifot">Foto:</label>
+            <input type="file" name="foto" id="ifoto">
         </p>
         <input type="submit" value="Enviar">
         <input type="reset" value="limpar">
