@@ -48,10 +48,10 @@ a.externo::after{
 }
 
 header {
-  background-image: linear-gradient(to bottom, var(--cor7), var(--cor6));
-   min-height: 150px;
-   text-align: center;
-   padding-top: 40px;
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor6));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1 {
@@ -157,17 +157,17 @@ main strong {
     padding: 2px 6px;
 }
 
-    main a {
+main a {
         text-decoration: none;
         font-weight: bold;
         color: chocolate;
         background-color: var(--cor0); 
         padding: 2px 6px;
-    }
+}
 
-    main a:hover {
+main a:hover {
         text-decoration: underline;
-    }
+}
 
 main img {
     width: 100%;
